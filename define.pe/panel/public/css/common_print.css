@@ -1,0 +1,102 @@
+ 
+
+ 
+@media screen {
+    body{ 
+    font-family: monospace;
+    font-weight: normal;
+    font-style: normal;
+        font-size: 9pt;
+        
+        
+    }
+    p{
+        font-size: 9pt;
+        width: 100%;
+        clear: both;
+        padding: 0px;
+        margin: 0;
+    }
+    .right{
+        text-align: right;
+    }
+    .left{
+        text-align: left;
+    }
+    .center{
+        text-align: center;
+    }
+    
+    .title-pharm{
+        display: block;
+        text-align: center;
+        font-size: 2em !important;
+    }
+    .title-description{
+     font-size: 0.8em !important;   
+    }
+     table{
+            border-collapse: collapse !important;
+     }
+    .row{
+        border: 1px solid #8A8383;
+    border-left: 0;
+    border-right: 0;
+    }
+      
+
+}
+
+ @media print {
+
+    body,table{
+            font-family: monospace;
+    font-weight: normal;
+    font-style: normal;
+        font-size: 9pt;
+
+         
+    }
+    p{
+        font-size: 9pt;
+        width: 100%;
+        clear: both;
+         padding: 0px;
+        margin: 0;
+
+    }
+    .center{
+        text-align: center;
+
+    }
+    .left{
+        text-align: left;
+         padding: 0px;
+        margin: 0;
+    }
+    .right{
+        text-align: right ;
+         padding: 0px;
+        margin: 0;
+    }
+    .title-pharm{
+        display: block;
+        text-align: center;
+        font-size: 2em !important;
+        font-weight: normal;
+        font-style: normal;
+    }
+    .title-description{
+     font-size:0.8em !important;   
+    }
+    table{
+            border-collapse: collapse !important;
+     }
+    .row{
+        border: 1px solid #8A8383;
+    border-left: 0;
+    border-right: 0;
+    }
+    
+
+}

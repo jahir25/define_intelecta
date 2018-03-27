@@ -1,0 +1,18 @@
+
+
+Dentro de la carpeta panel hay un archivo llamado: .env.development 
+En este archivo cambiar los siguientes parametros.
+
+- APP_BASE_URL= (http://localhost:8090/civa/panel/) AQUI DEBE ESPECIFICAR LA URL DONDE SE ALOJARÁ EL PANEL ADMIN QUE LISTARÁ TODOS LOS LEADS DEL LANDING.
+
+DB_HOST=localhost (Aqui el host de la base de datos Nota: Mysql)
+
+DB_DATABASE=civa (Nombre de la base de datos)
+
+DB_USERNAME=root (Nombre de usuario)
+
+DB_PASSWORD='' (Especificar la contraseña)
+
+DB_PORT=3306 (Especificar el puerto. Nota por defecto es el 3360 de MYSQL)
+
+DB_DRIVER=mysqli (Este es el driver con el que se implemento el proyecto)

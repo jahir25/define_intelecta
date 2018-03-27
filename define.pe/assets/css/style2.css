@@ -1,0 +1,250 @@
+body{
+  overflow-x: hidden;
+}
+.projects{
+  padding: 25rem 0 5rem;
+  margin-top: 10rem;
+  height: 100%;
+}
+
+.projects .title{
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.section{
+  position: relative;
+  height: 100%;
+  width: 100%;
+    
+}
+.section .box{
+  
+  position: absolute;
+  width: 565px;
+  top: 30%;
+  opacity: .8;
+}
+
+
+.box__white{
+   padding: 4rem;
+   overflow: hidden;
+}
+.box--left{
+  left: 0px;
+}
+.box--right{
+  right:  0px;
+}
+.box__title{
+  color: white;
+  font-family: 'Sensations-and_Qualities';
+  font-size: 7.4rem;
+  margin-top: 0;
+  text-align: center;
+
+}
+.box__title.black{
+  color: #333333;
+}
+.box__description{
+  color: #838383;
+    font-size: 1.5rem;
+    line-height: 1.8em;
+}
+
+.box__button{
+  text-align: center;
+}
+
+.box__link{
+  position: absolute;
+  bottom: -64px;
+
+  width: 100%;
+}
+
+
+
+.box__link--item {
+  color: white;
+  display: inline-block;
+  font-family: 'Gotham-Book';
+  font-size: 1.3rem;
+  position: relative;
+  padding: 1rem 0;
+}
+
+
+
+
+
+
+.box__link--item:hover{
+  color: white;
+}
+.box__link--item::before,
+.box__link--item::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 9;
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.box__link--item::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box__link--item::after {
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.box__link--item:hover {
+  /*color: red;*/
+  text-decoration: none;
+}
+
+.box__link--item::before,
+.box__link--item::after {
+  width: 3rem;
+  height: 1rem;
+
+  
+
+}
+
+.box__link--item::before {
+  border-top: .3rem solid #ffffff;
+  border-right: .3rem solid #ffffff;
+  border-left: .3rem solid #ffffff;
+}
+
+.box__link--item::after {
+  border-bottom: .3rem solid #ffffff;
+  border-right: .3rem solid #ffffff;
+  border-left: .3rem solid #ffffff;
+}
+
+ 
+
+
+
+.color-gray{
+  color: #6e6f6e !important;
+}
+
+.box__link--item-gray::before {
+  border-top: .3rem solid #6e6f6e;
+  border-right: .3rem solid #6e6f6e;
+  border-left: .3rem solid #6e6f6e;
+}
+
+.box__link--item-gray::after {
+  border-bottom: .3rem solid #6e6f6e;
+  border-right: .3rem solid #6e6f6e;
+  border-left: .3rem solid #6e6f6e;
+}
+
+
+
+
+
+
+#vivanco{
+  background-image: url(../img/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+ }
+
+
+ #basadre{
+   background-image: url(../img/bg2.jpg);
+   background-size: cover;
+   background-position: center;
+  }
+
+  #lithos{
+    background-image: url(../img/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+
+
+
+   @media only screen and (max-width : 320px) {
+     .projects{
+       margin-top: 0rem;
+           padding: 0rem 0 5rem;
+     }
+     .section .box{
+       width: 100%;
+     }
+     .box__white{
+       padding: 1rem;
+     }
+     .box__title{
+        font-size: 4rem;
+        margin-top: 0;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+     }
+     .box__description{
+       text-align: center;
+     }
+   }
+
+
+      @media only screen and (max-width : 420px) {
+        .projects{
+          margin-top: 0rem;
+              padding: 0rem 0 5rem;
+        }
+        .section .box{
+          width: 100%;
+        }
+           .box__title{
+             text-align: center;
+           }
+        .box__description{
+          text-align: center;
+        }
+
+      }
+
+
+      @media only screen and (max-width : 790px) {
+        .projects{
+          margin-top: 0rem;
+              padding: 0rem 0 5rem;
+        }
+
+      }
+
+       ._rotate{
+             
+            transform: rotate(360deg);
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+
+           
+        }
+       
+
+
+
+/*
+ RESPONSIVE
+*/

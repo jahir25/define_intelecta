@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Define</title>
+        <!-- Owl carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/style.css?v=5" rel="stylesheet">
+        <link href="assets/css/style2.css?v=5" rel="stylesheet">
+        <link href="assets/css/style3.css?v=5" rel="stylesheet">
+        <link href="assets/css/responsive.css?v=5" rel="stylesheet">
+        <link href="assets/css/aos.css" rel="stylesheet">
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105605895-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            ;
+            gtag('js', new Date());
+
+            gtag('config', 'UA-105605895-1');
+        </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq)
+                    return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq)
+                    f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window,
+                    document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1978130862433145'); // Insert your pixel ID here.
+            fbq('track', 'PageView');
+        </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1978130862433145&ev=PageView&noscript=1"
+                   /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <img class="img-responsive brand-white" src="assets/img/logo-define-2.png" alt="Define tu espacio logo">
+                    <img class="img-responsive brand-color" src="assets/img/logo-define-1.png" alt="Define tu espacio logo">
+                </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="header__nav navbar-collapse collapse">
+                    <ul class="header__nav-list">
+                        <li><a href="#banner">Inicio</a></li>
+                        <li><a href="#nosotros">¿Quiénes somos?</a></li>
+                        <li><a class="link__scroll" href="#proyectos">Nuestros proyectos</a></li>
+                        <li><a href="#contact" class="go-scroll">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Modal -->
+    <div class="container">
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <h2>Suscríbete para recibir novedades</h2>
+                    <p>Mantente al tanto de las novedades DEFINE inscribiendo tu correo electrónico aquí.</p>
+                    <form class="ajax-news" method="post" action="http://define.pe/panel/index.php/api/api/postAddNews">
+                        <div class="field">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="field">
+                            <button class="submit" type="submit">ENVIAR</button>
+                        </div>
+                    </form>
+                    <div id="form-messages1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main banner -->
+    <section class="main-banner" id="banner">
+        <div class="owl-carousel main-carousel" data-current="1">
+            <div class="item main-carousel__slide" style="background-image: url('assets/img/slider/001.jpg')">
+                <div class="container">
+                    <!--<h2>Lorem ipsum dolor</h2>-->
+                    <h2>Define los mejores momentos<br>en el lugar ideal.</h2>
+                    <div class="button-down">
+                        <a class="share-icon" href="#nosotros"><img class="img-responsive" src="assets/img/share-icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item main-carousel__slide" style="background-image: url('assets/img/slider/002.jpg')">
+                <div class="container">
+                    <!--<h2>Lorem ipsum dolor</h2>-->
+                    <h2>Un espacio perfecto<br>para cada etapa de su vida.</h2>
+                    <div class="button-down">
+                        <a class="share-icon" href="#nosotros"><img class="img-responsive" src="assets/img/share-icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item main-carousel__slide" style="background-image: url('assets/img/slider/003.jpg')">
+                <div class="container">
+                    <!--<h2>Lorem ipsum dolor</h2>-->
+                    <h2>Construye los recuerdos más especiales<br>en tu nuevo hogar.</h2>
+                    <div class="button-down">
+                        <a class="share-icon" href="#nosotros"><img class="img-responsive" src="assets/img/share-icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item main-carousel__slide" style="background-image: url('assets/img/slider/004.jpg')">
+                <div class="container">
+                    <!--<h2>Lorem ipsum dolor</h2>-->
+                    <h2>La emoción de definir tu nuevo hogar.</h2>
+                    <div class="button-down">
+                        <a class="share-icon" href="#nosotros"><img class="img-responsive" src="assets/img/share-icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="owl-1" class="container carousel-nav__wrapper">
+            <div class="carousel-nav">
+                <button class="carousel-nav__prev" type="button" name="prevSlide">←</button>
+                <div class="carousel-nav__progress">
+                    <strong class="carousel-nav__current">01</strong>/
+                    <strong class="carousel-nav__total">04</strong>
+                </div>
+                <button class="carousel-nav__next" type="button" name="nextSlide">→</button>
+            </div>
+        </div>
+        <div class="cr-contacto visible-xs text-center">
+            <a href="#contact" class="btn-slider"><span>CONTACTO</span></a>
+        </div>
+    </section>
+    <!-- End of main banner -->
+    <!-- Nosotros section -->
+    <section class="nosotros">
+        <div class="container">
+            <h2 class="nosotros__title" id="nosotros">Nosotros</h2>
+            <p class="nosotros__info">DEFINE es una inmobiliaria cuyo enfoque está centrado en la construcción de departamentos de alta calidad diseñados pensando en las necesidades de sus clientes, bajo la premisa de construirlos con el cuidado y dedicación que cada persona le pone a su propio hogar.</p>
+            <div class="row">
+                <div class="nosotros__wrapper">
+                    <div class="col-xs-12 col-sm-4 nosotros__subsection">
+                        <h3>Misión</h3>
+                        <p>En DEFINE trabajamos para entregar productos de valor cuyo diferencial es la construcción de departamentos de alta calidad pensados en las necesidades reales de nuestros clientes.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 nosotros__subsection">
+                        <h3>Visión</h3>
+                        <p>Ser la inmobiliaria en Perú reconocida por la alta calidad en acabados y construcción de sus departamentos, así como por entregar un producto final que refleje las necesidades del cliente.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 nosotros__subsection nosotros__subsection--image nosotros__subsection--shadow text-right">
+                        <img class="img-responsive" src="assets/img/vision-img.jpg" alt="family image">
+                    </div>
+                </div>
+                <div class="col-xs-12 nosotros__subsection nosotros__subsection--image">
+                    <div>
+                        <div class="owl-carousel nosotros-carousel" data-current="1">
+                            <div class="item">
+                                <div style="background-image: url(assets/img/001.jpg)" class="slider2">
+                                    <h2>Vivanco 2</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div style="background-image: url(assets/img/004.jpg)" class="slider2">
+                                    <h2>Vivanco 2</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div style="background-image: url(assets/img/005.jpg)" class="slider2">
+                                    <h2>Vivanco 2</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div style="background-image: url(assets/img/006.jpg)" class="slider2">
+                                    <h2>Vivanco 2</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div style="background-image: url(assets/img/007.jpg)" class="slider2">
+                                    <h2>Vivanco 2</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="owl-2" class="container carousel-nav__wrapper">
+                            <div class="carousel-nav">
+                                <button class="carousel-nav__prev" type="button" name="prevSlide">←</button>
+                                <div class="carousel-nav__progress">
+                                    <strong class="carousel-nav__current">01</strong>/
+                                    <strong class="carousel-nav__total">04</strong>
+                                </div>
+                                <button class="carousel-nav__next" type="button" name="nextSlide">→</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <div class="" id="proyectos"></div>
+    <section class="m-p">
+        <!-- End Nosotros section -->
+        <div class="container">
+            <div id="project-info">
+                <h2 class="title-p" id="proyectos">Nuestros Proyectos</h2>
+                <p class="title-des">Conoce nuestra propuesta: espacios diseñados para invitarte a disfrutar de los mejores momentos en ambientes inspirados en tus necesidades, que hacen que estar en casa sea una de las experiencias más agradables de cada día. Define tu espacio ideal.</p>   
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="basadre">
+        <div class="box box--left" id="box-2">
+            <div class="box__white">
+                <div class="col-xs-12">
+                    <h3 class="box__title">Av. Del Sur</h3>
+                </div>
+            </div>
+            <div class="box__button">
+                <div class="box__link">
+                    <a class="box__link--item" href="#contact">
+                        CONOCE MÁS DEL PROYECTO <span class="project__link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="my-car" >
+            <div class="owl-carousel owl-car owl-car">
+                <div class="item">
+                    <img src="./assets/sur/5.png" width="70">
+                    <p>Diseño e implementación <br> personalizado</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/sur/4.png" width="70">
+                    <p>
+                        Excelentes acabados
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="./assets/sur/3.png" width="70">
+                    <p>Amplios departamentos </p>
+                </div>
+                <div class="item">
+                    <img src="./assets/sur/2.png" width="70">
+                    <p>Sistemas de seguridad <br> instalados </p>
+                </div>
+                <div class="item">
+                    <img src="./assets/sur/1.png" width="70">
+                    <p>Con conexiones de <br> Gas Natural</p>
+                </div>
+            </div>
+        </div>
+        <div class="animate-box inactive" id="animate-2">
+            <div class="animate-box-become1">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/sur/5.png" alt="">
+                        <p>
+                            Diseño e<br>
+                            implementación<br>
+                            personalizado
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become2">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/sur/4.png" alt="">
+                        <p>
+                            Excelentes<br>
+                            acabados
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become3">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/sur/3.png">
+                        <p>
+                            Amplios<br>
+                            departamentos
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become4">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/sur/2.png">
+                        <p>
+                            Sistemas de<br>
+                            seguridad<br>
+                            instalados
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become5">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/sur/1.png">
+                        <p>
+                            Con conexiones<br>
+                            de Gas Natural
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="vivanco">
+        <div class="box box--left" id="box-1">
+            <div class="box__white">
+                <div class="col-xs-12">
+                    <h3 class="box__title">Vivanco 2</h3>
+                    <!-- 
+                       <p class="box__description">Con un diseño pensado en brindar espacios ideales para reunir a la familia y crear momentos memorables, el edificio Vivanco2 presenta 14 departamentos con una selección de elegantes acabados y amplias áreas sociales que invitan al relajo y las actividades en común en ambientes con excelente iluminación natural.</p>
+                    -->
+                </div>
+            </div>
+            <div class="box__button">
+                <div class="box__link">
+                    <a class="box__link--item" href="#contact">
+                        CONOCE MÁS DEL PROYECTO <span class="project__link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="my-car" >
+            <div class="owl-carousel owl-car owl-car">
+                <div class="item">
+                    <img src="./assets/vivanco/8.png" width="70">
+                    <p>Cocina equipada con <br> productos Bosch</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/vivanco/7.png" width="70">
+                    <p>Excelentes acabados</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/vivanco/6.png" width="70">
+                    <p>Pisos de bambú</p>
+                </div>
+                 <div class="item">
+                    <img src="./assets/vivanco/5.png" width="70">
+                    <p>Amplio Lobby</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/vivanco/4.png" width="70">
+                    <p>Salón Multiusos</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/vivanco/3.png" width="70">
+                    <p>Sistemas de seguridad <br> instalados</p>
+                </div>
+                 <div class="item">
+                    <img src="./assets/vivanco/2.png" width="70">
+                    <p>Grupo electrógeno</p>
+                </div>
+                 <div class="item">
+                    <img src="./assets/vivanco/1.png" width="70">
+                    <p>Con conexiones de <br> Gas Natural</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="animate-box inactive" id="animate-1">
+            <div class="animate-box-become1">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/vivanco/8.png" alt="">
+                        <p>
+                            Cocina equipada<br>
+                            con productos<br>
+                            Bosch
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become2">
+                <div class="bottom">
+                    <div class="circle">
+
+                        <img src="./assets/vivanco/7.png" alt="">
+                        <p>
+                            Excelentes <br> acabados
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become3">
+                <div class="bottom">
+                    <div class="circle">
+
+                        <img src="./assets/vivanco/6.png" alt="">
+                        <p>
+                            Pisos de<br>
+                            bambú
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become4">
+                <div class="bottom">
+                    <div class="circle">
+
+                        <img src="./assets/vivanco/5.png" alt="">
+                        <p>
+                            Amplio<br>
+                            Lobby
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become5">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/vivanco/4.png" alt="">
+                        <p>
+                            Salón<br>
+                            Multiusos
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become6">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/vivanco/3.png">
+                        <p>
+                            Sistemas de<br>
+                            seguridad<br>
+                            instalados
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become7">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/vivanco/2.png">
+                        <p>
+                            Grupo<br>
+                            electrógeno
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become8">
+                <div class="bottom">
+                    <div class="circle">
+
+
+                        <img src="./assets/vivanco/1.png">
+                        <p>
+                            Con conexiones<br>
+                            de Gas Natural
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="lithos">
+        <div class="box box--left" id="box-3">
+            <div class="box__white">
+                <div class="col-xs-12">
+                    <h3 class="box__title black">Lithos</h3>
+                </div>
+            </div>
+            <div class="box__button">
+                <div class="box__link">
+                    <a class="box__link--item box__link--item-gray  color-gray" href="#contact">
+                        CONOCE MÁS DEL PROYECTO <span class="project__link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="my-car" >
+            <div class="owl-carousel owl-car owl-car">
+                <div class="item">
+                    <img src="./assets/lithos/9.png" width="70">
+                    <p class="black">Excelente vista en <br> todos los departamentos</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/lithos/8.png" width="70">
+                    <p class="black">Departamentos <br> inteligentes: Automatización</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/lithos/7.png" width="70">
+                    <p class="black">Excelentes acabados</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/lithos/5.png" width="70">
+                    <p class="black">Kitchen Lounge</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/lithos/4.png" width="70">
+                    <p class="black">Ambientes amplios <br> con iluminación natural</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/lithos/3.png" width="70">
+                    <p class="black">Con conexiones para GLP</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/lithos/2.png" width="70">
+                    <p class="black">Gimnasio equipado</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/lithos/1.png" width="70">
+                    <p class="black">Grupo electrógeno</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="animate-box inactive" id="animate-3">
+            <div class="animate-box-become1">
+                <div class="bottom">
+                    <div class="circle">
+
+                        <img src="./assets/lithos/9.png" alt="">
+                        <p class="black">
+                            Excelente vista<br>
+                            en todos los<br>
+                            departamentos
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become2">
+                <div class="bottom">
+                    <div class="circle">
+
+
+                        <img src="./assets/lithos/8.png" alt="">
+                        <p class="black">
+                            Departamentos<br>
+                            inteligentes:<br>
+                            Automatización
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become3">
+                <div class="bottom">
+                    <div class="circle">
+
+
+                        <img src="./assets/lithos/7.png" alt="">
+                        <p class="black">
+                            Excelentes<br>
+                            acabados
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animate-box-become5">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/lithos/5.png" alt="">
+                        <p class="black">
+                            Kitchen<br>
+                            Lounge
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become6">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/lithos/4.png" alt="">
+                        <p class="black">
+                            Ambientes amplios<br>
+                            con iluminación natural
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become7">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/lithos/3.png">
+                        <p class="black">
+                            Con conexiones<br>
+                            para GLP
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become8">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/lithos/2.png">
+                        <p class="black">
+                            Gimnasio<br>
+                            equipado
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-box-become8">
+                <div class="bottom">
+                    <div class="circle">
+                        <img src="./assets/lithos/1.png">
+                        <p class="black">
+                            Grupo<br>
+                            electrógeno
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <!-- Proyectos section -->
+    <section class="contacto">
+        <div class="container">
+            <h2 id="contact">Contacto</h2>
+            <div class="col-md-4 col-sm-6">
+                <div class="left-contacto">
+                    <p>DEFINE</p>
+                    <p>ventas@define.pe</p>
+                    <p>Tel. <a href="tel:017590247">01  759  0247</a></p>
+                    <p>Cel. <a href="tel:945671432">945 671  432</a></p>
+                    <p>Cel. <a href="tel:993452553">993 452 553</a></p>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <form id="ajax-contact" method="post" action="http://define.pe/panel/index.php/api/api/postAddContact">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="field">
+                                <!-- <label for="name">Vivanco</label> -->
+                                <select id="exampleSelect1" name="exampleSelect1" placeholder="Vivanco" required="">
+                                    <option>Información de proyectos</option>
+                                    <option>Consultas</option>
+                                    <option>Otros</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="field">
+                                <input type="tel" id="tel" name="tel" placeholder="Celular" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="field">
+                                <input type="text" id="name" name="name" placeholder="Nombre" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="field">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="field">
+                                <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                            </div>
+                            <div class="field">
+                                <button class="form-button" type="submit">ENVIAR</button>
+                            </div>
+                            <div id="form-messages"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="left-contacto-mobile">
+            <div class="container">
+                <div class="col-xs-12">
+                    <p>DEFINE</p>
+                    <span>ventas@define.pe </span>
+                    <span>Tel. 01  759 0247 </span>
+                    <span>Cel. 945 671 432</span>
+                    <span>Cel. 993 452 553</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="top-footer">
+            <div class="container">
+                <div class="footer-col1 col-md-4">
+                    <img src="assets/img/footer-logo.png" alt="">
+                    <p>Cel. <a href="tel:945671432">945 671 432</a></p>
+                    <p>Cel. <a href="tel993452553">993 452 553</a></p>
+                    <p>Tel. <a href="tel:017590247">01 759 0247</a></p>
+                    <p>ventas@define.pe</p>
+                </div>
+                <div class="footer-col2 col-md-4">
+                    <h2>SÍGUENOS EN</h2>
+                    <p><i class="fa fa-facebook" aria-hidden="true"></i>/DefineInmobiliaria</p>
+                </div>
+                <div class="subscribe col-md-4">
+                    <h2>SUSCRÍBETE</h2>
+                    <div class="field">
+                        <form class="ajax-news"  method="post" action="http://define.pe/panel/index.php/api/api/postAddNews">
+                            <div class="field">
+                                <input type="email" id="email" name="email" placeholder="EMAIL *" required>
+                            </div>
+                            <div class="field">
+                                <button class="form-button submit" type="submit">ENVIAR</button>
+                            </div>
+                        </form>
+                        <div id="form-messages1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <ul>
+                    <li> <a href="#"> INICIO  \ </a></li>
+                    <li> <a href="#"> ¿QUIÉNES SOMOS? \ </a></li>
+                    <li> <a href="#"> NUESTROS PROYECTOS \ </a></li>
+                    <li> <a href="#"> CONTÁCTANOS </a> </li>
+                </ul>
+                <div class="footer-c">
+                    <p>Copyright © 2017 DEFINE Property Group | Privacy Policy | Disclaimer | Terms & Conditions | Due Diligence Checklist | Sitemap | Search</p>
+                    <p>By Seek, Digital Agency Digital</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Proyectos section -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/headhesive.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js?v=4"></script>
+    <script>
+        $('.owl-car').owlCarousel({
+            loop: true,
+            dots: false,
+            nav: true, // Show next and prev buttons
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true,
+            responsiveClass: true,
+            responsive: {
+                0: {items: 1, nav: false, dots: true},
+                576: {items: 3, nav: false, dots: true},
+                992: {items: 4, nav: false, dots: true},
+                1200: {items: 4, nav: false, dots: true},
+            }
+        })
+    </script>
+</body>
+</html>
